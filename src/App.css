@@ -9,15 +9,31 @@
   --third-font: 'Roboto Condensed', sans-serif;
   }
 
-
-.App-header {
-  margin: 30px 30px;
-  text-align: center;
-  font: var(--second-font);
+body{
+  background-color: var(--background-color);
 }
 
+.App-home {
+  margin: 60px 30px;
+  text-align: center;
+  font-family: var(--third-font);
+  color: black;
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.home-h1 {
+  font-family: var(--second-font);
+  font-size: 56px;
+}
 .App-logo {
   display: block;
   max-width: 200px;
   margin: 0 auto;
+}
+
+.App-footer {
+  text-align: center;
+  color: var(--fourth-color);
 }
