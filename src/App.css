@@ -23,14 +23,15 @@ body{
   font-size: 22px;
 }
 
-.home-h1 {
-  font-family: var(--second-font);
-  font-size: 56px;
-}
 .App-logo {
   display: block;
   max-width: 200px;
   margin: 0 auto;
+}
+
+.home-h1 {
+  font-family: var(--second-font);
+  font-size: 56px;
 }
 
 .App-footer {

@@ -23,7 +23,7 @@ export default function App() {
         </header>
      
 
-       <footer className="App-footer">  Coded By Margaret Cezar     </footer>
+       <footer className="App-footer">  Coded By Margaret Cezar </footer>
       </div>
     </div>
   );
