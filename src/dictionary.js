@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./dictionary.css";
+import axios from "axios";
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState(" ");
@@ -9,14 +10,14 @@ export default function Dictionary() {
     alert (`Searching for ${keyword} definition`);
   
 //api code source from Paul (SC)
-  let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=39284b94tea8fb240cc5d3o3a355d5a0`;
-axios(get apiUrl).then (handleResponse);
+let apiKey = `39284b94tea8fb240cc5d3o3a355d5a0`;
+let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=39284b94tea8fb240cc5d3o3a355d5a0`;
+axios.get (apiUrl).then(handleResponse);
 }
 
   function handleKeywordChange(event) {
      setKeyword(event.target.value);
   }
-
 
   return (
     <div className="Dictionary">
