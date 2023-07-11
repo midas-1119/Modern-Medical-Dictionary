@@ -5,8 +5,8 @@ export default function Results(results) {
   if (results) {
     return (
       <div className="Results">
-        <h2> {results.word}</h2>{" "}
-        {results.meaning.map(function (meaning, index) {
+        <h2> {results.word}</h2>
+        {results.meaning.map((meanings, index) => {
           return (
             <div key={index}>
               <Meaning meaning={meanings} />{" "}
