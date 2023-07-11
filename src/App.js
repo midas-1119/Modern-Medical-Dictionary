@@ -1,9 +1,6 @@
-require("dotenv").config();
-
 import logo from "./logo.png";
 import "./App.css";
-import Dictionary from "./dictionary.js";
-console.log(process.env.API_KEY);
+import Dictionary from "./Dictionary.js";
 
 export default function App() {
   return (

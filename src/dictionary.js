@@ -1,29 +1,28 @@
 import React, { useState } from "react";
-import "./dictionary.css";
+import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
-import "./dotenv/config";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState(" ");
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
-    setResults(response.data[0]);
+    setResults(response.data);
   }
 
   function search(event) {
     event.preventDefault();
 
     //api code source from Paul (SC) + UMLS
-    let apiKey = "process.env.API_KEY";
+    let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   function handleKeywordChange(event) {
     event.preventDefault();
+    setKeyword(event.target.value);
   }
 
   return (
