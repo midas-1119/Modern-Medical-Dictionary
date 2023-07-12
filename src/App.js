@@ -23,7 +23,6 @@ export default function App() {
         </header>
 
         <footer className="App-footer">
-          {" "}
           Coded by <a href="https://margaretcezar.com"> Margaret Cezar</a>
         </footer>
       </div>

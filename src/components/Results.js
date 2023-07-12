@@ -6,10 +6,10 @@ export default function Results(results) {
     return (
       <div className="Results">
         <h2> {results.word}</h2>
-        {results.meaning.map((meanings, index) => {
+        {results.meaning?.map((meaning, index) => {
           return (
             <div key={index}>
-              <Meaning meaning={meanings} />{" "}
+              <Meaning meaning={meaning} />
             </div>
           );
         })}
