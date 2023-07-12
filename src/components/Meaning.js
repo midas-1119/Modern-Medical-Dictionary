@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Meaning(meaning) {
+export default function Meaning({ meaning }) {
   console.log(meaning);
 
   return (
