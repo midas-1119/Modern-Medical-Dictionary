@@ -1,15 +1,15 @@
 :root {
   --background-color: beige;
-  --second-color: #fcf8f3; 
-  --third-color: #ffd3b6; 
-  --fourth-color: #698474; 
-  --fifth-color: #ffaaa5;   
-  --default-font: 'Montserrat', sans-serif;
-  --second-font: 'Playfair Display', serif;
-  --third-font: 'Roboto Condensed', sans-serif;
-  }
+  --second-color: #fcf8f3;
+  --third-color: #ffd3b6;
+  --fourth-color: #698474;
+  --fifth-color: #ffaaa5;
+  --default-font: "Montserrat", sans-serif;
+  --second-font: "Playfair Display", serif;
+  --third-font: "Roboto Condensed", sans-serif;
+}
 
-body{
+body {
   background-color: var(--background-color);
 }
 

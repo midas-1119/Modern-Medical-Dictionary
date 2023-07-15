@@ -10,7 +10,7 @@ export default function Dictionary() {
     event.preventDefault();
 
     //api code source from Paul (SC) + UMLS
-    let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
+    let apiKey = "b3abe329d61a4924aa99cc545a08e43d";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then((response) => setResults(response.data));
   }

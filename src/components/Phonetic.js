@@ -2,6 +2,6 @@ import React from "react";
 import Results from "./Results";
 
 export default function Phonetics({ phonetics }) {
-  console.log(Results.phonetics);
-  return <Results result="phonetic [1]" />;
+  console.log({ phonetics });
+  return <Results result={phonetic} />;
 }
