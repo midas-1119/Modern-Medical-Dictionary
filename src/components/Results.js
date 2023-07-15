@@ -12,7 +12,7 @@ export default function Results({ results }) {
           {results.meanings.map((meanings, index) => {
             return (
               <div key={index}>
-                {meaning.phonetic}
+                {meanings.phonetic}
                 <Meaning meaning={meanings} /> <br />
               </div>
             );
