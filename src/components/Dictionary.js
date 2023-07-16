@@ -25,7 +25,7 @@ export default function Dictionary() {
   }
 
   const shecodesImgApikey = "39284b94tea8fb240cc5d3o3a355d5a0";
-  let shecodesImgUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}`;
+  let shecodesImgUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${shecodesImgApikey}`;
   axios.get(shecodesImgUrl).then(handleScImgResponse);
 
   function handleKeywordChange(event) {
