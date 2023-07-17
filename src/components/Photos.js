@@ -7,11 +7,20 @@ export default function Photos({ photos }) {
       <div className="Photos">
         <section>
           <div className="row">
-            {Photos.photos.map((photo, index) => {
+            {photos.map((photo, index) => {
               return (
-                <div key={index}>
-                  <a href="{photo.src.original}" target="_blank" />
-                  <img src={photo.src.landscape} className="img-fluid" />
+                <div className="col-4" key={index}>
+                  <a
+                    href={photo.src.original}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={photo.src.landscape}
+                      alt="litrato"
+                      className="img-fluid"
+                    />
+                  </a>
                 </div>
               );
             })}
